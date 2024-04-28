@@ -1,0 +1,13 @@
+
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>npm install   
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>cd ssr-client 
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>npm install   
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>cd ..         
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>npm start     
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>cd ssr-client 
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>npm start     
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>cd ..
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>docker login containerregistrypfe.azurecr.io --username ContainerRegistryPFE
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>docker build -t containerregistrypfe.azurecr.io/node-test:snapshot .       
+D:\raed\PFE\React 18 SSR\react-18-ssr-pipeable-stream>docker run -p 3009:3009 containerregistrypfe.azurecr.io/node-test:snapshot
+docker push containerregistrypfe.azurecr.io/node-test:snapshot
